@@ -44,4 +44,7 @@ By default, this action will check-out to the `SHA` for that workflow’s event
 See also :
 [behavior of checkout versions](https://qiita.com/uyuni/items/2f2a8ce4fef3712f1b74)
 
+## Workflow dispatch
+
+See also : [GitHub Actions を workflow_dispatch で切り分ける](https://zenn.dev/tetoteto/articles/github_actions_workflow_dispatch_call)
 

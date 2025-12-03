@@ -1,6 +1,25 @@
 name: Run Node.js Application
 on:
   workflow_dipatch:
+    inputs:
+      logLevel:
+        description: 'Log level'
+        required: true
+        default: 'warning'
+        type: choice
+        optinos:
+          -info
+          -warning
+          -error
+      tags:
+        description: 'Test scenario tags'
+        required: false
+        type: boolean
+      environment:
+        description: 'Environment to run test against''
+        type: environment
+        required: true
+
 jobs:
   setup_and_run:
     runs-on: ubuntu-latest
