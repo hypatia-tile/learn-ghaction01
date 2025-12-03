@@ -17,4 +17,4 @@ jobs:
         run: echo "Hello, World!"
 
       - name: github workspace
-        run: echo "{{ github.workspace }}"
+        run: echo "${{ github.workspace }}"
