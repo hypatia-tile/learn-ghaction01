@@ -1,0 +1,17 @@
+name: Run Node.js Application
+on:
+  workflow_dipatch:
+jobs:
+  setup_and_run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'
+      - name: Install dependencies
+        run: npm Install
+      - name: Run script
+        run: node index.js
