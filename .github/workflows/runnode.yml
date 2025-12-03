@@ -1,8 +1,8 @@
 name: Run Node.js Application
 on:
   push:
-    branches:
-      - main
+  branches:
+    - main
 
 
 jobs:
@@ -16,6 +16,6 @@ jobs:
         with:
           node-version: '20'
       - name: Install dependencies
-        run: npm Install
+        run: npm install
       - name: Run script
         run: node index.js
