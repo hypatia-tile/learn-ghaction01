@@ -4,7 +4,7 @@ on:
     inputs:
       logLevel:
         description: 'Log level'
-        required: true
+        required: false
         default: 'warning'
         type: choice
         optinos:
@@ -18,7 +18,7 @@ on:
       environment:
         description: 'Environment to run test against'
         type: environment
-        required: true
+        required: false
 
 jobs:
   setup_and_run:
