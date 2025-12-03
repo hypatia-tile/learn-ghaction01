@@ -11,7 +11,10 @@ jobs:
 
     steps:
       - name: Get Your Code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       - name: Say Hello to the World
         run: echo "Hello, World!"
+
+      - name: github workspace
+        run: echo "{{ github.workspace }}"

@@ -41,8 +41,7 @@ Contribute to `actions/checkout` development by creating an account on GitHub.
 By default, this action will check-out to the `SHA` for that workflow’s event
 (such as push and pull_request). Otherwise, uses the default branch (usually main or master in a standard repository).
 
-More detials:
-
-[chatgpt](https://github.com/copilot/share/4815031a-08e0-8064-a800-ce4044e12918)
+See also :
+[behavior of checkout versions](https://qiita.com/uyuni/items/2f2a8ce4fef3712f1b74)
 
 
