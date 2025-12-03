@@ -1,6 +1,6 @@
 name: Run Node.js Application
 on:
-  workflow_dipatch:
+  workflow_dispatch:
     inputs:
       logLevel:
         description: 'Log level'
