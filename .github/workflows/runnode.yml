@@ -2,7 +2,7 @@ name: Run Node.js Application
 on:
   push:
     branches:
-      - main
+      - dev
 
 
 jobs:
