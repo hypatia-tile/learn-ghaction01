@@ -1,20 +1,19 @@
-name: CI
+name: Inspect Runner
 
 on:
-  push:
-    branches:
-      - main
+  workflow_dispatch
 
 jobs:
-  build:
+  inspect:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Get Your Code
-        uses: actions/checkout@v4
+      - run: |
+          echo "Bash version:"
+          bash --version
+          echo "Node version:"
+          node -v
+          echo "Python version:"
+          python3 --version
+          echo "Installed packages snapshot:"
+          dpkg -l | head
 
-      - name: Say Hello to the World
-        run: echo "Hello, World!"
-
-      - name: github workspace
-        run: echo "${{ github.workspace }}"

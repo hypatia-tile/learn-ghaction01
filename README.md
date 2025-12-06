@@ -2,7 +2,7 @@
 
 ## Check Articles
 
-![Hello World in GitHub Actions](https://dev.to/sre_panchanan/hello-world-in-github-actions-a-beginners-guide-to-your-first-workflow-1mbh)
+[Hello World in GitHub Actions](https://dev.to/sre_panchanan/hello-world-in-github-actions-a-beginners-guide-to-your-first-workflow-1mbh)
 ## Note
 
 Added `.github/workflows/main.yml` file to create a GitHub Action.
