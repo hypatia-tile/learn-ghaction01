@@ -4,17 +4,13 @@ on:
   push:
     branches:
       - main
+      - dev
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Get Your Code
-        uses: actions/checkout@v4
-
       - name: Say Hello to the World
         run: echo "Hello, World!"
 
-      - name: github workspace
-        run: echo "${{ github.workspace }}"
