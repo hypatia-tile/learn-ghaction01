@@ -7,12 +7,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: |
-        echo "Bash version:"
-        bash --version
-        echo "Node version:"
-        node -v
-        echo "Python version:"
-        python3 --version
-        echo "Installed packages snapshot:"
-        dpkg -l | head
+          echo "Bash version:"
+          bash --version
+          echo "Node version:"
+          node -v
+          echo "Python version:"
+          python3 --version
+          echo "Installed packages snapshot:"
+          dpkg -l | head
 
