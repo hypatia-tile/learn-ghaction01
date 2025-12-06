@@ -13,4 +13,6 @@ jobs:
     steps:
       - name: Say Hello to the World
         run: echo "Hello, World!"
+      - name: Create annotation for build error
+        run: echo "::error file=app.js,line=1::Missing semicolon"
 
