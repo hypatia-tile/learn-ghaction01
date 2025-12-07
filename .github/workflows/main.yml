@@ -16,5 +16,8 @@ jobs:
           python3 --version
           echo "Installed packages snapshot:"
           dpkg -l | head
-          tree -L 3 /
+          echo "Current working directory:"
+          pwd
+          echo "Directory structure (3 levels deep):"
+          tree -L 3 
 
