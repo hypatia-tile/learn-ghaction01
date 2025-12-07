@@ -20,4 +20,9 @@ jobs:
           pwd
           echo "Directory structure (3 levels deep):"
           tree -L 3 
+  show-files:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: ls -R
 
