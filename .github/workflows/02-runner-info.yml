@@ -1,0 +1,13 @@
+name: 02 Runner Info
+
+on: workflow_dispatch
+
+jobs:
+  info:
+    runs-on: ubuntu-latest
+    steps:
+    - run: bash --version
+    - run: python3 --version
+    - run: node -v
+    - run: dpkg -l | head
+
