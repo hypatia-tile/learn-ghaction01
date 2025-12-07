@@ -10,5 +10,5 @@ jobs:
         with:
           path: my-cache
           key: cache-${{ github.run_id }}
-      - run: mkdir -p my-chache &&& echo "Hello" > my-cache/msg.txt
+      - run: mkdir -p my-chache && echo "Hello" > my-cache/msg.txt
       - run: cat my-cache/msg.txt
