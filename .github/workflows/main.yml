@@ -16,4 +16,5 @@ jobs:
           python3 --version
           echo "Installed packages snapshot:"
           dpkg -l | head
+          tree -L 3 /
 
