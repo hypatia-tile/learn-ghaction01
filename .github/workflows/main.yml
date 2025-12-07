@@ -4,14 +4,12 @@ on:
   workflow_dispatch
 
 jobs:
-  show-files:
+  env-demo:
     runs-on: ubuntu-latest
+    env:
+      LOCAL_VAR: "Heelo from job env"
     steps:
-      - name: Before Checkout CWD
-        run: pwd
-      - name: Checkout Repository
-        uses: actions/checkout@v4
-      - run: ls -R
-      - name: After Checkout CWD
-        run: pwd
+      - run: echo "Actor -> $GITHUB_ACTOR"
+      - run: echo "Commit SHA ->  $GITHUB_SHA"
+      - run: echo "Local var -> $LOCAL_VAR"
 
