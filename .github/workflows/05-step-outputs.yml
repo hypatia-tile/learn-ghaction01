@@ -1,0 +1,11 @@
+name: 05 Step Outputs
+
+on: workflow_dispatch
+
+jobs:
+  step-demo:
+    runs-on: ubuntu-latest
+    steps:
+      - id: producer
+        run: echo "text=hello-step-output" >> $GITHUB_OUTPUT
+      - run: echo "Output was ${{ steps.producer.outputs.text }}"
