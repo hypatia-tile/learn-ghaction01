@@ -1,0 +1,16 @@
+name: 04 Environment Variables
+
+on: workflow_dispatch
+
+jobs:
+  env_demo:
+    runs-on: ubuntu-latest
+    env:
+      LOCAL_VAR: "Hello from local"
+    steps:
+      - run: echo "actor = $GITHUB_ACTOR"
+      - run: echo "sha = $GITHUB_SHA"
+      - run: echo "local var = $LOCAL_VAR"
+      - run: echo "context actor = ${{ github.actor }}"
+
+
