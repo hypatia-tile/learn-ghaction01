@@ -1,0 +1,10 @@
+name: 07 Conditions Example
+
+on: push
+
+jobs:
+  cond:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "This runs only on main"
+        if: github.ref == 'refs/heads/main'
