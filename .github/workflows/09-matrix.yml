@@ -1,0 +1,12 @@
+name: 09 Matrix Demo
+
+on: push
+
+jobs:
+  matrix:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        version: [10,12,14]
+    steps:
+      - run: echo "Node version ${{ matrix.version }}"
