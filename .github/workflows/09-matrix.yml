@@ -1,6 +1,6 @@
 name: 09 Matrix Demo
 
-on: push
+on: workflow_dispatch
 
 jobs:
   matrix:
