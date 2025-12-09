@@ -1,6 +1,6 @@
 name: 07 Conditions Example
 
-on: push
+on: workflow_dispatch
 
 jobs:
   cond:

@@ -1,0 +1,14 @@
+name: 08 dispatch input
+
+on:
+  workflow_dispatch:
+    inputs:
+      msg:
+        description: "Message to print"
+        required: true
+
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Message ${{ github.event.inputs.msg }}"
