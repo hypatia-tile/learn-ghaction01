@@ -1,0 +1,18 @@
+name: 06 Job Output
+
+on: workflow_dispatch
+
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    outputs:
+      msg: ${{ steps.producer.outputs.msg }}
+    steps:
+      - id: producer
+        run: echo "msg=hello-job-output" >> $GITHUB_OUTPUT
+
+  job2:
+    needs: job1
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Received ${{ needs.job1.outputs.msg }}"
