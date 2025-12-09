@@ -1,0 +1,13 @@
+name: 10 Upload Artifact
+
+on: workflow_dispatch
+
+jobs:
+  upload:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "artifact content" > out.txt
+      - uses: actions/upload-artifact@v4
+        with:
+          name: example-artifact
+          path: out.txt
