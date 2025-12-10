@@ -1,0 +1,11 @@
+name: 13 Cron Example
+
+on:
+  schedule:
+    - cron: "0 12 * * *" # every day at midnight UTC
+
+jobs:
+  cron:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Cron triggered at $(date)"
