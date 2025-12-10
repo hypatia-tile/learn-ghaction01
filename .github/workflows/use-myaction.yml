@@ -10,4 +10,4 @@ jobs:
       - name: Use My Action
         uses: hypatia-tile/learn-ghaction02@main
         with:
-          who: Sinokun
+          name: Sinokun
