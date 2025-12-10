@@ -1,0 +1,12 @@
+name: 11 Download Artifact
+
+on: workflow_dispatch
+
+jobs:
+  download:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actinos/download-artifact@v4
+        with:
+          name: example-artifact
+      - run: cat out.txt
