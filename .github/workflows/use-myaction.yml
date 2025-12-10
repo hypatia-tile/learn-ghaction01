@@ -8,6 +8,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Use My Action
-        uses: hypatia-tile/learn-ghaction02@v1
+        uses: hypatia-tile/learn-ghaction02@main
         with:
           who: Sinokun
