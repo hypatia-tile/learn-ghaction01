@@ -6,8 +6,12 @@ jobs:
   info:
     runs-on: ubuntu-latest
     steps:
-    - run: bash --version
-    - run: python3 --version
-    - run: node -v
-    - run: dpkg -l | head
+    - name: Check Bash Version
+      run: bash --version
+    - name: Check Python version
+      run: python3 --version
+    - name: Check Node.js version
+      run: node -v
+    - name: List installed packages (first 10)
+      run: dpkg -l | head
 
